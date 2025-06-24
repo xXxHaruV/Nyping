@@ -1,20 +1,40 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>Nyping</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>タイピングゲーム</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Nyping</h1>
-  <div id="word">Loading...</div>
-  <input type="text" id="input" autocomplete="off" autofocus>
-  <p id="result"></p>
-
-  <footer>
-    <small>&copy; 2025 EP Nuru. All rights reserved.</small>
-  </footer>
-
-  <script src="script.js"></script>
+    <div id="menu">
+        <h1>タイピングゲーム</h1>
+        <button id="startButton">ゲームスタート</button>
+        <button id="settingsButton">設定</button>
+        <button id="scoreButton">スコア表示</button>
+    </div>
+    <div id="game" style="display:none;">
+        <h2>時間: <span id="time">60</span> 秒</h2>
+        <h2>スコア: <span id="score">0</span></h2>
+        <div id="wordContainer"><span id="wordDisplay"></span></div>
+        <p><button id="endGameButton">ゲーム終了</button></p>
+    </div>
+    <div id="settings" style="display:none;">
+        <h2>設定</h2>
+        <p><label>パスコード: <input type="password" id="passcodeInput"> 
+           <button id="passcodeButton">確認</button></label></p>
+        <p><label>最小文字数: <input type="number" id="minLenInput" disabled></label></p>
+        <p><label>最大文字数: <input type="number" id="maxLenInput" disabled></label></p>
+        <p><button id="saveSettings" disabled>設定を保存</button></p>
+        <p><button id="settingsBack">メニューに戻る</button></p>
+    </div>
+    <div id="scoreScreen" style="display:none;">
+        <h2>スコア表示</h2>
+        <p>最高: <span id="bestScore">0</span></p>
+        <p>最低: <span id="worstScore">0</span></p>
+        <p>平均: <span id="averageScore">0</span></p>
+        <p><button id="scoreBack">メニューに戻る</button></p>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
