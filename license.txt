@@ -2,5 +2,10 @@ Copyright (c) 2025 EP Nuru
 
 All rights reserved.
 
-This code is for personal use and viewing only.
-Reproduction, modification, distribution, or commercial use is strictly prohibited without written permission from the author.
+This source code and all associated files are protected by copyright law.
+
+You are permitted to view this project via the live GitHub Pages site.
+
+However, reproduction, modification, redistribution, or any form of commercial or non-commercial use of this source code or assets is strictly prohibited without explicit written permission from the author.
+
+Any violation may result in legal action.
