@@ -1,6 +1,6 @@
 const words = [
   "apple", "banana", "computer", "javascript", "keyboard",
-  "penguin", "universe", "giraffe", "program", "language"
+  "penguin", "universe", "giraffe", "program", "language", "cry", "uniuniuni", "aaaaaa"
 ];
 
 let currentWord = "";
